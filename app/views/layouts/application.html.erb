@@ -24,9 +24,11 @@
 		</nav>
 	</div>
 </header>
-
+<div class ='container'>
+<% flash.each do |message_type, message| %>
+  <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
+<% end %>
 <%= yield %>
-
 <footer class="footer">
   <small>
     The <a href="http://www.railstutorial.org/">Ruby on Rails Tutorial</a>
@@ -40,5 +42,6 @@
     </ul>
   </nav>
 </footer>
+</div>
 </body>
 </html>
