@@ -10,8 +10,7 @@
 	             email: "mail.sayanc@gmail.com",
 	             password:              "foobar",
 	             password_confirmation: "foobar",
-	             admin: true,
-	             picture: false)
+	             admin: true)
 
 	99.times do |n|
 	  name  = Faker::Name.name
@@ -20,8 +19,7 @@
 	  User.create!(name:  name,
 	               email: email,
 	               password:              password,
-	               password_confirmation: password,
-	               picture: false)
+	               password_confirmation: password)
 	end
 	users = User.order(:created_at).take(6)
 	50.times do
