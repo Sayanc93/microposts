@@ -18,13 +18,23 @@
     </div>
   </div>
 <% else %>
-<div class="center jumbotron">
-  <h1>Welcome to the Sample Twitter</h1>
+<html style="height: 100%">
+<style type="text/css">
+  h1, h2{
+      position: relative;
+      top: 30%;
+      transform: translateY(-30%);
+      -webkit-transform: translateY(-30%);
+      -ms-transform: translateY(-30%);}
+</style>
+<body class="background">
+  <h1 class="intro-text">Welcome to the Microposts!</h1>
 
-  <h2>
+  <h2 class= "intro-lead-in">
     This is the home page
   </h2>
 
-  <%= link_to "Sign up now!", sign_up_path, class: "btn btn-lg btn-primary" %>
-</div>
+  <%= link_to "Sign up now!", sign_up_path, class: "btn btn-lg btn-primary", id: "abc" %>
+</body>
+<html>
 <% end %>

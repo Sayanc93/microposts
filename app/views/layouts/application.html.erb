@@ -9,11 +9,18 @@
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
       </script>
    <![endif]-->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
 <header class="navbar navbar-fixed-top navbar-inverse">
 	<div class="container">
-	<%= link_to "Sample Twitter", root_path, id: "logo" %>
+	<%= link_to "Microposts", root_path, id: "logo" %>
 		<nav>
 			<ul class="nav navbar-nav navbar-right">
 			<li><%= link_to "Home",   root_path %></li>
@@ -35,25 +42,25 @@
       <% else %>
         <li><%= link_to "Log in", login_path %></li>
         <li><%= link_to "About",   about_path %></li>
-        <li><%= link_to "Contact", contact_path %></li>
+        <!-- <li><%= link_to "Contact", contact_path %></li> -->
       <% end %>
 			</ul>
 		</nav>
 	</div>
 </header>
-<div class ='container'>
+<div class="container" style="height: 100%;">
 <% flash.each do |message_type, message| %>
   <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
 <% end %>
 <%= yield %>
 <footer class="footer">
   <small>
-    Sample Twitter Styled app created by Sayan Chakraborty
+    Microposts app created by Sayan Chakraborty
   </small>
   <nav>
     <ul>
       <li><%= link_to "About",   about_path %></li>
-      <li><%= link_to "Contact", contact_path %></li>
+      <!-- <li><%= link_to "Contact", contact_path %></li> -->
     </ul>
   </nav>
 </footer>

@@ -7,12 +7,35 @@ $gray-medium-light: #eaeaea;
 
 /* universal */
 
+html{
+    min-height: 100% !important;
+    height: 100%;
+}
+
+#abc{
+  position: relative;
+  top: 30%;
+  transform: translateY(-30%);
+  -webkit-transform: translateY(-30%);
+  -ms-transform: translateY(-30%);
+}
+
 body {
-  padding-top: 60px;
+  min-height: 100% !important;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+  padding-top: 50px;
 }
 
 section {
-  overflow: auto;
+  overflow: overflow;
+}
+
+.well
+{
+    height: 500px;
+    overflow: auto;
 }
 
 textarea {
@@ -24,6 +47,78 @@ textarea {
   h1 {
     margin-bottom: 10px;
   }
+}
+
+.background {
+    text-align: center;
+    color: #fff;
+    background-attachment: scroll;
+    background-image: url('/assets/header.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.background .intro-text .intro-lead-in {
+    font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #0000FF;
+    font-size: 22px;
+    font-style: italic;
+}
+
+.background .intro-text .intro-heading {
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #fed136;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+@media(min-width:768px) {
+
+    .background .intro-text .intro-lead-in {
+        font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 40px;
+        font-style: italic;
+    }
+
+    .background .intro-text .intro-heading {
+        text-transform: uppercase;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        color: #fed136;
+        font-size: 30px;
+        font-weight: 500;
+    }
+}
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 10px;
+  font-weight: bold;
+  &:hover {
+  color: white;
+  text-decoration: none;
+  }
+}
+
+.btn-xl {
+    padding: 20px 40px;
+    border-color: #fed136;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #fed136;
 }
 
 /* typography */
@@ -76,6 +171,9 @@ p {
 footer {
   margin-top: 45px;
   padding-top: 5px;
+  position: absolute;
+  width:80%;
+  bottom: 0;
   border-top: 1px solid $gray-medium-light;
   color: $gray-light;
   a {
