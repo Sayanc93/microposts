@@ -53,17 +53,6 @@
   <%= content_tag(:div, message, class: "alert alert-#{message_type}") %>
 <% end %>
 <%= yield %>
-<footer class="footer">
-  <small>
-    Microposts app created by Sayan Chakraborty
-  </small>
-  <nav>
-    <ul>
-      <li><%= link_to "About",   about_path %></li>
-      <!-- <li><%= link_to "Contact", contact_path %></li> -->
-    </ul>
-  </nav>
-</footer>
 </div>
 </body>
 </html>
