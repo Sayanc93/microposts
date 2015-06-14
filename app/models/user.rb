@@ -59,4 +59,8 @@ class User < ActiveRecord::Base
     def following?(other_user)
       following.include?(other_user)
     end
+
+    private
+
+
 end
