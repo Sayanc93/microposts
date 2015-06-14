@@ -49,7 +49,7 @@ textarea {
   }
 }
 
-.background {
+.back {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
@@ -62,14 +62,14 @@ textarea {
     -o-background-size: cover;
 }
 
-.background .intro-text .intro-lead-in {
+.back .intro-text .intro-lead-in {
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
     
     font-size: 22px;
     font-style: italic;
 }
 
-.background .intro-text .intro-heading {
+.back .intro-text .intro-heading {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     
@@ -79,14 +79,14 @@ textarea {
 
 @media(min-width:768px) {
 
-    .background .intro-text .intro-lead-in {
+    .back .intro-text .intro-lead-in {
         font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
         font-size: 40px;
         font-style: italic;
         
     }
 
-    .background .intro-text .intro-heading {
+    .back .intro-text .intro-heading {
         text-transform: uppercase;
         font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
         
