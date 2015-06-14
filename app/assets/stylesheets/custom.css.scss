@@ -64,7 +64,7 @@ textarea {
 
 .background .intro-text .intro-lead-in {
     font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
-    color: #0000FF;
+    
     font-size: 22px;
     font-style: italic;
 }
@@ -81,6 +81,7 @@ textarea {
 
     .background .intro-text .intro-lead-in {
         font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+        color: #fed136;
         font-size: 40px;
         font-style: italic;
     }
@@ -92,21 +93,6 @@ textarea {
         font-size: 30px;
         font-weight: 500;
     }
-}
-
-#logo {
-  float: left;
-  margin-right: 10px;
-  font-size: 1.7em;
-  color: white;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  padding-top: 10px;
-  font-weight: bold;
-  &:hover {
-  color: white;
-  text-decoration: none;
-  }
 }
 
 .btn-xl {
